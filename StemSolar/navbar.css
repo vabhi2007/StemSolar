@@ -1,0 +1,56 @@
+body {
+  background: #020b1c;
+  padding: 2%;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.pageTitle {
+  float: right;
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 1.8vw;
+
+  background: linear-gradient(to right, #01c083, #1668ff);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  clear: both;
+}
+
+nav {
+  position: relative;
+  float: right;
+
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: white;
+  text-align: right;
+  padding-left: 3.5vw;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+nav li a:hover {
+  color: #2672ff;
+}
+nav li a:hover.greenButton {
+  color: #01c083;
+}
