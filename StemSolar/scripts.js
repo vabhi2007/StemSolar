@@ -1,7 +1,7 @@
 function calculateAngle(current, total) {
     return (current / total) * 360;
   }
-  var progressValue = calculateAngle(400, 1000);
+  var progressValue = calculateAngle(100, 10000);
   document.documentElement.style.setProperty('--calculated-angle', progressValue + 'deg');
   console.log(calculateAngle);
 

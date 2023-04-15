@@ -16,7 +16,7 @@ button {
   margin: 0.5%;
   border: none;
   color: var(--text-color);
-  padding: 0.5vw 1vw;
+  padding: 0vw 1vw;
 
   font-size: var(--title-font-size);
 
@@ -144,7 +144,7 @@ button:hover {
 .item14 img {
   width: 3vw;
   height: auto;
-  margin: 5%;
+  transform: translateY(10%);
 }
 .meetTeamTitle {
   font-family: "Outfit";
