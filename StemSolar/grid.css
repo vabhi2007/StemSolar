@@ -4,10 +4,28 @@ html {
 
 :root {
   --calculated-angle: 0deg;
+  --text-color: #000000;
+  --title-font-size: 2.5vw;
 }
 * {
   margin: 0;
   padding: 0;
+}
+
+button {
+  margin: 0.5%;
+  border: none;
+  color: var(--text-color);
+  padding: 0.5vw 1vw;
+
+  font-size: var(--title-font-size);
+
+  cursor: pointer;
+  border-radius: 4px;
+  box-shadow: 0 5px 5px rgba(0, 0, 0, 0.3);
+}
+button:hover {
+  box-shadow: 0 5px 15px rgba(0, 0, 0, 0.3);
 }
 
 .grid-container {
@@ -23,8 +41,9 @@ html {
 }
 
 .adjustTeam {
-}
-.adjustRow3 {
+  margin-left: 10%;
+  margin-right: 10%;
+  width: auto;
 }
 
 .item1 {
@@ -34,30 +53,39 @@ html {
   grid-template-rows: 2/3;
   grid-column: 1 / span 6;
   height: min-content;
+  width: 100%;
 }
 .item3 {
+  display: flex;
+  place-items: center;
+
   grid-template-rows: 2/3;
   grid-column: 7 / span 6;
   margin-top: 2%;
   position: relative;
-  width: 42vw;
-  height: min-content;
+  width: auto;
+  height: auto;
 }
 .item3 img {
-  width: 100%;
+  width: 80%;
   height: auto;
-  border: 1px solid #000000;
-  border-radius: 37px;
+  margin-left: 10%;
 }
 .item4 {
-  display: grid;
+  display: flex;
   place-items: center;
+
   grid-template-rows: 3/4;
   grid-column: 1 / span 6;
+
+  width: auto;
+  padding-right: 10%;
 }
 .item5 {
   grid-template-rows: 3/4;
   grid-column: 7 / span 6;
+  height: min-content;
+  width: 100%;
 }
 .item6 {
   grid-template-rows: 4/5;
@@ -100,7 +128,8 @@ html {
 .item14 {
   grid-template-rows: 8/9;
   grid-column: 1 / span 12;
-  background-color: rgba(19, 35, 64, 0.559);
+  background-color: #ffa07a;
+  width: 100%;
   height: auto;
   display: flex;
   justify-content: center;
@@ -122,7 +151,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
-  color: #ffffff;
+  color: --text-color;
 }
 
 .socials {
@@ -130,25 +159,25 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
-  color: #ffffff;
+  color: --text-color;
 }
 
 .circular-progress {
   position: relative;
-  height: 35vw;
-  width: 35vw;
+  height: 30vw;
+  width: 30vw;
   border-radius: 50%;
-  background: conic-gradient(#008b48 var(--calculated-angle), #008b485a 0deg);
+  background: conic-gradient(#ff7f50 var(--calculated-angle), #ffcba4 0deg);
   justify-content: center;
   align-items: center;
 }
 .circular-progress::before {
   content: "";
   position: absolute;
-  height: 27.5vw;
-  width: 27.5vw;
+  height: 24vw;
+  width: 24vw;
   border-radius: 50%;
-  background-color: #020b1c;
+  background-color: blanchedalmond;
   top: 50%;
   left: 50%;
   transform: translate(-50%, -50%);
@@ -159,7 +188,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
-  color: #ffffff;
+  color: #ff7f50;
   position: absolute;
   top: 50%;
   left: 50%;
@@ -170,14 +199,16 @@ html {
   top: 50%;
   left: 50%;
   transform: translate(-50%, 90%);
-  background-color: transparent;
+  background-color: #ffcba4;
+  color: #000000;
 }
+
 .donateButton h1 {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
-  color: #ffffff;
+  color: --text-color;
 }
 .info-box {
   position: relative;
@@ -185,17 +216,18 @@ html {
   height: min-content;
   min-height: 0px;
   margin-top: 2%;
-  background: rgba(9, 28, 63, 0.62);
+  background: #ffa07a;
   border-radius: 20px;
 }
 .teamGreen {
-  background: #014630;
+  background: #ffa07a;
 }
 .info-box img {
-  width: 25vw;
+  display: flex;
+  width: 75%;
   height: auto;
-  margin: 5%;
-  transform: translateX(2%);
+  margin: 0%;
+  transform: translateX(15%);
 }
 .info-box h1 {
   padding: 4%;
@@ -205,7 +237,7 @@ html {
   font-style: normal;
   font-weight: 400;
   font-size: 2.5vw;
-  color: #ffffff;
+  color: --text-color;
 }
 .info-box p {
   padding: 4%;
@@ -214,9 +246,9 @@ html {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.5vw;
+  font-size: 1.1svw;
 
-  color: #ffffff;
+  color: --text-color;
 }
 .hero-pic {
   margin-top: 2%;
@@ -225,10 +257,13 @@ html {
   height: auto;
 }
 .hero-pic img {
+  display: flex;
+  justify-content: center;
+  align-items: center;
   width: 100%;
   height: auto;
-  border: 1px solid #000000;
-  filter: blur(2px);
+
+  filter: blur(0px);
   border-radius: 37px;
 }
 .centered-title {
@@ -248,7 +283,7 @@ html {
 
   text-transform: capitalize;
 
-  color: #ffffff;
+  color: #ffc0a8;
 
   text-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }

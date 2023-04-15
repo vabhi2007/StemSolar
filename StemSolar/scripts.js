@@ -1,7 +1,7 @@
 function calculateAngle(current, total) {
     return (current / total) * 360;
   }
-  var progressValue = calculateAngle(20, 120);
+  var progressValue = calculateAngle(400, 1000);
   document.documentElement.style.setProperty('--calculated-angle', progressValue + 'deg');
   console.log(calculateAngle);
 
@@ -9,3 +9,12 @@ function getProgressText(current, total){
     return "$ " + current + "/" + total;
 }
 
+const navbar = document.querySelector('nav');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > navbar.offsetHeight) {
+    navbar.classList.add('scrolled');
+  } else {
+    navbar.classList.remove('scrolled');
+  }
+});

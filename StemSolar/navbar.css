@@ -1,6 +1,11 @@
 body {
-  background: #020b1c;
+  background: #dedede;
   padding: 2%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+:root {
+  --text-color: #858585;
 }
 header {
   display: flex;
@@ -10,11 +15,12 @@ header {
 }
 .pageTitle {
   float: right;
+
   font-family: "Outfit";
   font-weight: 700;
   font-size: 1.8vw;
 
-  background: linear-gradient(to right, #01c083, #1668ff);
+  background: linear-gradient(to right, #d44713, #cc8650);
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
   clear: both;
@@ -22,6 +28,7 @@ header {
 
 nav {
   position: relative;
+
   float: right;
 
   font-family: "Outfit";
@@ -41,7 +48,7 @@ nav li {
 
 nav li a {
   display: inline-block;
-  color: white;
+  color: var(--text-color);
   text-align: right;
   padding-left: 3.5vw;
   text-decoration: none;
@@ -49,8 +56,10 @@ nav li a {
 }
 
 nav li a:hover {
-  color: #2672ff;
+  color: #ff7f50;
 }
-nav li a:hover.greenButton {
-  color: #01c083;
+
+.navbar.scrolled {
+  background-color: #000;
+  color: #fff;
 }
