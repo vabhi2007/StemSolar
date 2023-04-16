@@ -67,9 +67,9 @@ button:hover {
   height: auto;
 }
 .item3 img {
-  width: 80%;
+  width: 70%;
   height: auto;
-  margin-left: 10%;
+  margin-left: 15%;
 }
 .item4 {
   display: flex;
@@ -163,9 +163,12 @@ button:hover {
 }
 
 .circular-progress {
+  margin-top: 5%;
+  margin-left: 17.5%;
+
   position: relative;
-  height: 30vw;
-  width: 30vw;
+  height: 23vw;
+  width: 23vw;
   border-radius: 50%;
   background: conic-gradient(#ff7f50 var(--calculated-angle), #ffcba4 0deg);
   justify-content: center;
@@ -174,8 +177,8 @@ button:hover {
 .circular-progress::before {
   content: "";
   position: absolute;
-  height: 24vw;
-  width: 24vw;
+  height: 19vw;
+  width: 19vw;
   border-radius: 50%;
   background-color: blanchedalmond;
   top: 50%;
@@ -187,7 +190,7 @@ button:hover {
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
-  font-size: 2.5vw;
+  font-size: 2vw;
   color: #ff7f50;
   position: absolute;
   top: 50%;
@@ -231,8 +234,8 @@ button:hover {
 }
 .info-box h1 {
   padding: 4%;
+  padding-bottom: 1%;
   padding-left: 6%;
-  margin-bottom: 0;
   font-family: "Outfit";
   font-style: normal;
   font-weight: 400;
@@ -241,12 +244,12 @@ button:hover {
 }
 .info-box p {
   padding: 4%;
+  padding-top: 0%;
   padding-left: 6%;
-  margin-top: 0;
-  font-family: "Outfit";
+  font-family: "Montserrat";
   font-style: normal;
   font-weight: 400;
-  font-size: 1.1svw;
+  font-size: 1vw;
 
   color: --text-color;
 }
@@ -291,4 +294,8 @@ button:hover {
 @font-face {
   font-family: "Outfit";
   src: url("fonts/static/Outfit-Regular.ttf");
+}
+@font-face {
+  font-family: "Montserrat";
+  src: url("fonts/static/Montserrat-Medium.ttf");
 }
