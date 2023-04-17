@@ -9,12 +9,3 @@ function getProgressText(current, total){
     return "$ " + current + "/" + total;
 }
 
-const navbar = document.querySelector('nav');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > navbar.offsetHeight) {
-    navbar.classList.add('scrolled');
-  } else {
-    navbar.classList.remove('scrolled');
-  }
-});
