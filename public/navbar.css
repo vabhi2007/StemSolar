@@ -1,0 +1,62 @@
+body {
+  background: #dedede;
+  padding: 2%;
+  padding-left: 15%;
+  padding-right: 15%;
+}
+:root {
+  --text-color: #858585;
+}
+header {
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  align-items: center;
+}
+.pageTitle {
+  margin-left: 2%;
+
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 1.8vw;
+
+  background: linear-gradient(to right, #d44713, #cc8650);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  clear: both;
+}
+
+nav {
+  margin-right: 2%;
+
+  position: relative;
+
+  float: right;
+
+  font-family: "Outfit";
+  font-weight: 700;
+  font-size: 1.2vw;
+}
+
+nav ul {
+  list-style-type: none;
+  margin: 0;
+  padding: 0;
+}
+
+nav li {
+  float: left;
+}
+
+nav li a {
+  display: inline-block;
+  color: var(--text-color);
+  text-align: right;
+  padding-left: 3.5vw;
+  text-decoration: none;
+  transition-duration: 0.3s;
+}
+
+nav li a:hover {
+  color: #ff7f50;
+}
